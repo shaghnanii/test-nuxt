@@ -45,6 +45,7 @@ export default {
 
     async checkDay(event) {
       this.isShow = true;
+      this.isLoading = true;
       event.preventDefault()
       const payload = {
         url: '/calculate',
