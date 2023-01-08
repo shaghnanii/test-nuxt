@@ -6,6 +6,8 @@
           <div>
 <!--            Component/Widget to check weather the shop is open or closed at the moment.-->
             <OpenCloseComponent />
+
+            <DatePickerComponent class="mt-5" />
           </div>
         </b-col>
       </b-row>
@@ -16,10 +18,11 @@
 <script>
 import {mapActions} from "vuex";
 import OpenCloseComponent from "~/components/Widgets/OpenCloseComponent";
+import DatePickerComponent from "~/components/Widgets/DatePickerComponent";
 
 export default {
   name: 'IndexPage',
-  components: {OpenCloseComponent},
+  components: {DatePickerComponent, OpenCloseComponent},
   data() {
     return {}
   },
